@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>تم اختراق جهازك!</title>
+  <style>
+    body {
+      background-color: black;
+      color: red;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚠️ جهازك تحت السيطرة!</h1>
+  <p>جارٍ تحميل ملفاتك الخاصة...</p>
+  <script>
+    // اهتزاز الجهاز (للأجهزة التي تدعم ذلك)
+    if (navigator.vibrate) {
+      navigator.vibrate([500, 200, 500]);
+    }
+
+    // تشغيل صوت تحذيري (يحتاج تفاعل المستخدم أحيانًا)
+    const audio = new Audio("https://www.soundjay.com/button/beep-07.wav");
+    audio.play();
+  </script>
+</body>
+</html>
